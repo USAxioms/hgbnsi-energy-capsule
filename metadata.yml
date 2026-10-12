@@ -1,0 +1,26 @@
+title: "Human-Guided Blockchain-Native Safe Superintelligence (HGBNSI): Energy Implementation — Reproducibility Capsule (Pure WAD-18)"
+version: "2.0"
+date: "2026-10-11"
+authors:
+  - name: "Michael Aaron Russell"
+    affiliation: "Universal Standard Axiom Corporation"
+    orcid: "0009-0001-3360-6709"
+description: >
+  Reproduces every verification result for the HGBNSI energy implementation: equivalence of the
+  on-chain kernel logic and WAD-18 arithmetic with the C reference kernel v1.1 (decision-table
+  SHA-256 9e180bc9…), equivalence of the energy axiom checks with ENERGY_R3.py, human-ratified
+  round classification, the Sovereign Axiomatic Front End's core and logic, an end-to-end
+  guide → verifier → chain model → processor flow, and the heavy-dispatch benchmark of an
+  emulated analog processor behind an exact gate. Version 2 runs a pure WAD-18 backend in C
+  (floating point forbidden by the compiler) wrapped by the Python standard library, certifies zero
+  floating point over every compiled binary and Python file, binds every implementation to the
+  Solidity source, and detects 12 of 12 planted faults.
+keywords: [WAD-18, zero floating point, exact arithmetic, smart contracts, Ethereum, verification, energy, grid dispatch,
+           human-in-the-loop, reproducibility, fixed-point, photonic computing, safety]
+entry_point: "code/run"
+runtime_seconds_reference: 12
+requirements: ["Python >= 3.9 (standard library only)", "GCC (C11); verified on x86-64", "binutils (objdump)", "Node.js >= 18"]
+related:
+  - "SSI Verification Kernel capsule v1.1"
+  - "HGBNSI Technical White Paper v1.0"
+license: "Not yet declared (default: all rights reserved)"
