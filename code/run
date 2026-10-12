@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Single entry point (Code Ocean convention): reproduces every result.
+set -euo pipefail
+cd "$(dirname "$0")"
+python3 run_all.py
