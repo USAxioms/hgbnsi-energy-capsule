@@ -1,0 +1,749 @@
+{
+ "kernel": {
+  "functions": {
+   "inRange": {
+    "sig": "inRange(int256)",
+    "selector": "0x2c03265d"
+   },
+   "add": {
+    "sig": "add(int256,int256)",
+    "selector": "0xa5f3c23b"
+   },
+   "sub": {
+    "sig": "sub(int256,int256)",
+    "selector": "0xadefc37b"
+   },
+   "mul": {
+    "sig": "mul(int256,int256)",
+    "selector": "0xbbe93d91"
+   },
+   "div": {
+    "sig": "div(int256,int256)",
+    "selector": "0x43509138"
+   },
+   "vs": {
+    "sig": "vs(uint256,uint8)",
+    "selector": "0x556460b0"
+   },
+   "permit13FromBits": {
+    "sig": "permit13FromBits(uint32)",
+    "selector": "0x3afd0d12"
+   },
+   "decide": {
+    "sig": "decide(bool,uint8,bool)",
+    "selector": "0x5710794c"
+   },
+   "mediate": {
+    "sig": "mediate(uint8,bool)",
+    "selector": "0xc1c31c24"
+   },
+   "cslAuth": {
+    "sig": "cslAuth(bool,bool,uint64,uint64,bool)",
+    "selector": "0xd3780077"
+   },
+   "directiveValid": {
+    "sig": "directiveValid(bool,uint64,uint64,uint64,uint64,uint64,bool)",
+    "selector": "0x43352ee3"
+   },
+   "capabilityOk": {
+    "sig": "capabilityOk(uint32,uint32,bool)",
+    "selector": "0x52459bfc"
+   },
+   "nonRegression": {
+    "sig": "nonRegression(uint256,uint256,uint8)",
+    "selector": "0xf992418e"
+   },
+   "adopt6": {
+    "sig": "adopt6(bool,bool,bool,bool,bool,bool)",
+    "selector": "0x87810d5f"
+   },
+   "canTransition": {
+    "sig": "canTransition(uint8,uint8)",
+    "selector": "0x35cceb28"
+   },
+   "ssiVerify": {
+    "sig": "ssiVerify(uint16)",
+    "selector": "0x8a8d94e7"
+   },
+   "integrityHash": {
+    "sig": "integrityHash(int256,int256,int256,uint64,uint64,bytes32)",
+    "selector": "0xfc71757a"
+   },
+   "evaluate": {
+    "sig": "evaluate(int256,int256,int256,uint64,uint64,bytes32,bytes32)",
+    "selector": "0xeecc025f"
+   },
+   "transferOwnership": {
+    "sig": "transferOwnership(address)",
+    "selector": "0xf2fde38b"
+   },
+   "acceptOwnership": {
+    "sig": "acceptOwnership()",
+    "selector": "0x79ba5097"
+   },
+   "setVerifier": {
+    "sig": "setVerifier(address,bool)",
+    "selector": "0xac9b5671"
+   },
+   "setSafeStop": {
+    "sig": "setSafeStop(bool)",
+    "selector": "0x9f510f97"
+   },
+   "advanceEpoch": {
+    "sig": "advanceEpoch()",
+    "selector": "0x3cf80e6c"
+   },
+   "registerAxiom": {
+    "sig": "registerAxiom(bytes32,bytes32)",
+    "selector": "0xfe1806b5"
+   },
+   "sealAxioms": {
+    "sig": "sealAxioms()",
+    "selector": "0x47c208f9"
+   },
+   "axiomCount": {
+    "sig": "axiomCount()",
+    "selector": "0x71bdbc2a"
+   },
+   "registerAgent": {
+    "sig": "registerAgent(address,uint32,uint16,bytes32,uint64)",
+    "selector": "0xde307570"
+   },
+   "renewAgent": {
+    "sig": "renewAgent(address,uint64)",
+    "selector": "0x621ba862"
+   },
+   "transitionAgent": {
+    "sig": "transitionAgent(address,uint8,bytes32)",
+    "selector": "0x443775b0"
+   },
+   "attest": {
+    "sig": "attest(bytes32,uint8,bool,bool,uint8,uint256,bytes32)",
+    "selector": "0xbba65e0d"
+   },
+   "computeActionHash": {
+    "sig": "computeActionHash(address,uint256,ActionRequest)",
+    "selector": "0x3c7610a8"
+   },
+   "submitAction": {
+    "sig": "submitAction(ActionRequest,uint256)",
+    "selector": "0x8fb3faa4"
+   },
+   "proposeKernel": {
+    "sig": "proposeKernel(bytes32,bytes32,bytes32,uint8,uint256,uint256)",
+    "selector": "0x73220c2f"
+   },
+   "attestKernelProof": {
+    "sig": "attestKernelProof(bytes32,bytes32)",
+    "selector": "0xa775f843"
+   },
+   "adoptKernel": {
+    "sig": "adoptKernel(bytes32)",
+    "selector": "0x5ed67e62"
+   },
+   "getAgent": {
+    "sig": "getAgent(address)",
+    "selector": "0xfb3551ff"
+   },
+   "getAttestation": {
+    "sig": "getAttestation(bytes32)",
+    "selector": "0xa3112a64"
+   },
+   "getProposal": {
+    "sig": "getProposal(bytes32)",
+    "selector": "0x430694cf"
+   },
+   "verifySSI": {
+    "sig": "verifySSI(uint16)",
+    "selector": "0x14774e92"
+   },
+   "permitFromBits": {
+    "sig": "permitFromBits(uint32)",
+    "selector": "0x7aa4af7d"
+   },
+   "decideReference": {
+    "sig": "decideReference(bool,uint8,bool)",
+    "selector": "0xa636f736"
+   },
+   "wadMul": {
+    "sig": "wadMul(int256,int256)",
+    "selector": "0xca0d24bf"
+   },
+   "wadDiv": {
+    "sig": "wadDiv(int256,int256)",
+    "selector": "0x51e1f796"
+   },
+   "evaluateAVControl": {
+    "sig": "evaluateAVControl(int256,int256,int256,uint64,uint64,bytes32,bytes32)",
+    "selector": "0x8ba5424c"
+   },
+   "avIntegrityHash": {
+    "sig": "avIntegrityHash(int256,int256,int256,uint64,uint64,bytes32)",
+    "selector": "0x2e1f1222"
+   },
+   "owner": {
+    "sig": "owner()",
+    "selector": "0x8da5cb5b"
+   },
+   "pendingOwner": {
+    "sig": "pendingOwner()",
+    "selector": "0xe30c3978"
+   },
+   "safeStopped": {
+    "sig": "safeStopped()",
+    "selector": "0xbe297498"
+   },
+   "activeKernel": {
+    "sig": "activeKernel()",
+    "selector": "0x8cd300ed"
+   },
+   "currentEpoch": {
+    "sig": "currentEpoch()",
+    "selector": "0x76671808"
+   },
+   "ledgerHead": {
+    "sig": "ledgerHead()",
+    "selector": "0x11be04f7"
+   },
+   "ledgerLength": {
+    "sig": "ledgerLength()",
+    "selector": "0x2b57f2bd"
+   },
+   "axiomsSealed": {
+    "sig": "axiomsSealed()",
+    "selector": "0x06231971"
+   },
+   "axiomRoot": {
+    "sig": "axiomRoot()",
+    "selector": "0xac82f3bf"
+   },
+   "isVerifier": {
+    "sig": "isVerifier(address)",
+    "selector": "0x33105218"
+   },
+   "freshnessWindow": {
+    "sig": "freshnessWindow()",
+    "selector": "0x81880fd3"
+   },
+   "adoptionDelay": {
+    "sig": "adoptionDelay()",
+    "selector": "0x11bd3c15"
+   },
+   "decided": {
+    "sig": "decided(bytes32)",
+    "selector": "0xd014b44d"
+   },
+   "isAuthorized": {
+    "sig": "isAuthorized(bytes32)",
+    "selector": "0x62f4ed90"
+   }
+  },
+  "errors": {
+   "0x344d4a36": "WadOverflow()",
+   "0x52b6b893": "WadDivisionByZero()",
+   "0x1d4aa30f": "WadNonExact()",
+   "0x30cd7471": "NotOwner()",
+   "0x1853971c": "NotPendingOwner()",
+   "0x24663556": "NotVerifier()",
+   "0x8f34a6ff": "NotOwnerOrVerifier()",
+   "0x7c946ed7": "ZeroValue()",
+   "0xd8ef1aa0": "RoleConflict(address)",
+   "0x1e363988": "AxiomsAlreadySealed()",
+   "0x3fd41921": "AxiomsNotSealed()",
+   "0xdb204182": "AxiomExists(bytes32)",
+   "0x8d3e45f6": "UnknownAgent(address)",
+   "0x067d4bd8": "AgentExists(address)",
+   "0x086226e8": "AgentClosed(address)",
+   "0xeb1df718": "IllegalTransition(uint8,uint8)",
+   "0x46c7f05b": "TransitionNotPermittedForRole(uint8,uint8)",
+   "0x807cb697": "AlreadyDecided(bytes32)",
+   "0xb915cda8": "AttestationExists(bytes32)",
+   "0x44da54e0": "ProposalExists(bytes32)",
+   "0x0977e2be": "UnknownProposal(bytes32)",
+   "0xddffe20e": "TimelockActive(uint64)",
+   "0xd06a0e3b": "AdoptionDenied(uint8)",
+   "0x613970e0": "InvalidParameter()",
+   "0x08c379a0": "Error(string)",
+   "0x4e487b71": "Panic(uint256)"
+  },
+  "events": {
+   "LedgerAppended": {
+    "sig": "LedgerAppended(uint256,bytes32,bytes32,bytes32,bytes32)",
+    "topic": "0x68c37f9c29dd320c699c79e15dfd5e261111b18150fd6e367711935ad3ce9fc6",
+    "indexed": [
+     true,
+     true,
+     true,
+     false,
+     false
+    ]
+   },
+   "OwnershipTransferStarted": {
+    "sig": "OwnershipTransferStarted(address,address)",
+    "topic": "0x38d16b8cac22d99fc7c124b9cd0de2d3fa1faef420bfe791d8c362d765e22700",
+    "indexed": [
+     true,
+     true
+    ]
+   },
+   "OwnershipTransferred": {
+    "sig": "OwnershipTransferred(address,address)",
+    "topic": "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
+    "indexed": [
+     true,
+     true
+    ]
+   },
+   "VerifierSet": {
+    "sig": "VerifierSet(address,bool)",
+    "topic": "0x7a6dd775b9b6aa6ebde6f0c51172ef328eb9658e095364751705f28234e7257c",
+    "indexed": [
+     true,
+     false
+    ]
+   },
+   "SafeStopSet": {
+    "sig": "SafeStopSet(bool,address)",
+    "topic": "0x87128f7e48b133c5d7c7377aeae299cfcb490fe7bf48cac932870da450066443",
+    "indexed": [
+     false,
+     true
+    ]
+   },
+   "AxiomRegistered": {
+    "sig": "AxiomRegistered(bytes32,bytes32)",
+    "topic": "0x6fc6e3b712f5df516ac5782494d4c91b8379f0fe525971ef515beeb149558753",
+    "indexed": [
+     true,
+     false
+    ]
+   },
+   "AxiomsSealed": {
+    "sig": "AxiomsSealed(bytes32,uint256)",
+    "topic": "0x7bba44ad8709755e0e7a947ce19ecdb74d013033bffdc133f95f4ad455fac289",
+    "indexed": [
+     false,
+     false
+    ]
+   },
+   "AgentRegistered": {
+    "sig": "AgentRegistered(address,bytes32,uint32,uint16,uint64)",
+    "topic": "0xe3a876048583d93f39c6b28520e3dcce6c497f59e3cb19ea028475063ac1ada1",
+    "indexed": [
+     true,
+     false,
+     false,
+     false,
+     false
+    ]
+   },
+   "AgentStatusChanged": {
+    "sig": "AgentStatusChanged(address,uint8,uint8,bytes32)",
+    "topic": "0x1b991a2172c29a2cab3959711b001d5822fc9251d7e05869f521666bd0cea9da",
+    "indexed": [
+     true,
+     false,
+     false,
+     false
+    ]
+   },
+   "EpochAdvanced": {
+    "sig": "EpochAdvanced(uint64)",
+    "topic": "0xceab4df314f59b1daf93da4e1ca6009206c691b486aa89acb5a6776b215a734b",
+    "indexed": [
+     false
+    ]
+   },
+   "Attested": {
+    "sig": "Attested(bytes32,address,uint8,bytes32)",
+    "topic": "0x847809c705b618923848dc665e23dea0b9dcbaca432e1e2bd63c875b88ee6068",
+    "indexed": [
+     true,
+     true,
+     false,
+     false
+    ]
+   },
+   "ActionDecided": {
+    "sig": "ActionDecided(bytes32,address,uint8,uint32,uint8)",
+    "topic": "0x3e53fdad5fd88dc67ca22a255040033f5d159e7dc1e1f988dbf31a86e53f3b55",
+    "indexed": [
+     true,
+     true,
+     false,
+     false,
+     false
+    ]
+   },
+   "ExternalEffectPermitted": {
+    "sig": "ExternalEffectPermitted(bytes32,address,uint8,bytes32)",
+    "topic": "0x41f657278df860e489b422265fd7e45c951f078402cc7ca3541c19ddf11d89bb",
+    "indexed": [
+     true,
+     true,
+     false,
+     false
+    ]
+   },
+   "KernelProposed": {
+    "sig": "KernelProposed(bytes32,bytes32,uint64)",
+    "topic": "0x9803f8c42b660d334501b88ba9b14a7f5f105b9bd8a5f30b99482b0fdadd8394",
+    "indexed": [
+     true,
+     true,
+     false
+    ]
+   },
+   "KernelProofAttested": {
+    "sig": "KernelProofAttested(bytes32,address,bytes32)",
+    "topic": "0x536650f959cde0ee6c0ca16044bc1344696b2bdac777a42f15fb392da556a36c",
+    "indexed": [
+     true,
+     true,
+     false
+    ]
+   },
+   "KernelAdopted": {
+    "sig": "KernelAdopted(bytes32,bytes32)",
+    "topic": "0x54bafc62f5e12865dc0c227d570dfca0eeec862559aa56babed594baedd1ab67",
+    "indexed": [
+     true,
+     true
+    ]
+   }
+  }
+ },
+ "energy": {
+  "functions": {
+   "owner": {
+    "sig": "owner()",
+    "selector": "0x8da5cb5b"
+   },
+   "isVerifier": {
+    "sig": "isVerifier(address)",
+    "selector": "0x33105218"
+   },
+   "safeStopped": {
+    "sig": "safeStopped()",
+    "selector": "0xbe297498"
+   },
+   "activeKernel": {
+    "sig": "activeKernel()",
+    "selector": "0x8cd300ed"
+   },
+   "registerAxiom": {
+    "sig": "registerAxiom(bytes32,bytes32,uint8,uint8,uint256,int256)",
+    "selector": "0x484f8f13"
+   },
+   "sealAxioms": {
+    "sig": "sealAxioms()",
+    "selector": "0x47c208f9"
+   },
+   "submitRound": {
+    "sig": "submitRound((int256,int256,int256,int256,int256,int256,int256,int256,int256,uint256),bytes32)",
+    "selector": "0x2d271a22"
+   },
+   "ratifyRound": {
+    "sig": "ratifyRound(uint256,bytes32)",
+    "selector": "0xbab8b918"
+   },
+   "isAccepted": {
+    "sig": "isAccepted(uint256)",
+    "selector": "0x29bc3b85"
+   },
+   "getRound": {
+    "sig": "getRound(uint256)",
+    "selector": "0x8f1327c0"
+   },
+   "getAxiom": {
+    "sig": "getAxiom(bytes32)",
+    "selector": "0x74c9da28"
+   },
+   "axiomCount": {
+    "sig": "axiomCount()",
+    "selector": "0x71bdbc2a"
+   },
+   "evaluate": {
+    "sig": "evaluate((int256,int256,int256,int256,int256,int256,int256,int256,int256,uint256))",
+    "selector": "0x153d79c8"
+   },
+   "triadCovered": {
+    "sig": "triadCovered()",
+    "selector": "0x7f4a00bd"
+   },
+   "kernel": {
+    "sig": "kernel()",
+    "selector": "0xd4aae0c4"
+   },
+   "axiomsSealed": {
+    "sig": "axiomsSealed()",
+    "selector": "0x06231971"
+   },
+   "registryHash": {
+    "sig": "registryHash()",
+    "selector": "0x26d8252a"
+   },
+   "ledgerHead": {
+    "sig": "ledgerHead()",
+    "selector": "0x11be04f7"
+   },
+   "ledgerLength": {
+    "sig": "ledgerLength()",
+    "selector": "0x2b57f2bd"
+   },
+   "roundCount": {
+    "sig": "roundCount()",
+    "selector": "0x127f0b3f"
+   },
+   "lastAcceptedRound": {
+    "sig": "lastAcceptedRound()",
+    "selector": "0x79a7b03a"
+   },
+   "bestVerifiedCount": {
+    "sig": "bestVerifiedCount()",
+    "selector": "0x6db82f7d"
+   },
+   "axiomIds": {
+    "sig": "axiomIds(uint256)",
+    "selector": "0xca3c59cd"
+   }
+  },
+  "errors": {
+   "0x37630a31": "NotHumanGuide()",
+   "0x24663556": "NotVerifier()",
+   "0x95cc9b68": "SafeStopped()",
+   "0x7c946ed7": "ZeroValue()",
+   "0x1e363988": "AxiomsAlreadySealed()",
+   "0x3fd41921": "AxiomsNotSealed()",
+   "0xdb204182": "AxiomExists(bytes32)",
+   "0xf146bd1d": "TooManyAxioms()",
+   "0xdca741a9": "InsufficientGrounding(bytes32,uint8)",
+   "0x766ecd88": "InvalidAxiom(bytes32)",
+   "0x59920732": "ValueOutOfWadRange()",
+   "0x4af50638": "UnknownRound(uint256)",
+   "0xc6f1fc7e": "NotRatifiable(uint256,uint8)",
+   "0x08c379a0": "Error(string)",
+   "0x4e487b71": "Panic(uint256)"
+  },
+  "events": {
+   "LedgerAppended": {
+    "sig": "LedgerAppended(uint256,bytes32,bytes32,bytes32,bytes32)",
+    "topic": "0x68c37f9c29dd320c699c79e15dfd5e261111b18150fd6e367711935ad3ce9fc6",
+    "indexed": [
+     true,
+     true,
+     true,
+     false,
+     false
+    ]
+   },
+   "AxiomRegistered": {
+    "sig": "AxiomRegistered(bytes32,uint8,uint8,bytes32)",
+    "topic": "0xf92c53d76ec0d29110d0e25b7371ce81c519b06decfc9ba7630e77310b1c71f2",
+    "indexed": [
+     true,
+     false,
+     false,
+     false
+    ]
+   },
+   "AxiomsSealed": {
+    "sig": "AxiomsSealed(bytes32,uint256)",
+    "topic": "0x7bba44ad8709755e0e7a947ce19ecdb74d013033bffdc133f95f4ad455fac289",
+    "indexed": [
+     false,
+     false
+    ]
+   },
+   "RoundSubmitted": {
+    "sig": "RoundSubmitted(uint256,address,uint8,uint8,uint8,bytes32)",
+    "topic": "0x4c9e9eb062d7b5b2f28c6ca80443ae8a44c5ad7ae832e5b778b2862905a05cc1",
+    "indexed": [
+     true,
+     true,
+     false,
+     false,
+     false,
+     false
+    ]
+   },
+   "RoundRatified": {
+    "sig": "RoundRatified(uint256,address,bytes32)",
+    "topic": "0x81478777d0d4c5e3546f85ff9fc03b8137bd6c6c5289ef19c9ac6c6ee4ef7104",
+    "indexed": [
+     true,
+     true,
+     false
+    ]
+   }
+  }
+ },
+ "router": {
+  "functions": {
+   "owner": {
+    "sig": "owner()",
+    "selector": "0x8da5cb5b"
+   },
+   "isVerifier": {
+    "sig": "isVerifier(address)",
+    "selector": "0x33105218"
+   },
+   "safeStopped": {
+    "sig": "safeStopped()",
+    "selector": "0xbe297498"
+   },
+   "setProcessor": {
+    "sig": "setProcessor(address,bool)",
+    "selector": "0xc0f94a1c"
+   },
+   "submitJob": {
+    "sig": "submitJob(int256[],uint8,uint64)",
+    "selector": "0x7c0f9f8c"
+   },
+   "permitJob": {
+    "sig": "permitJob(uint256,bool,bytes32)",
+    "selector": "0x8ffcecd9"
+   },
+   "submitResult": {
+    "sig": "submitResult(uint256,int256[],int256[])",
+    "selector": "0x1508388e"
+   },
+   "isExecutable": {
+    "sig": "isExecutable(uint256,bytes32)",
+    "selector": "0x517b7ebb"
+   },
+   "markExecuted": {
+    "sig": "markExecuted(uint256,bytes32)",
+    "selector": "0xcc70735e"
+   },
+   "getJob": {
+    "sig": "getJob(uint256)",
+    "selector": "0xbf22c457"
+   },
+   "specHashOf": {
+    "sig": "specHashOf(int256[])",
+    "selector": "0xc7fbc1d1"
+   },
+   "checkPlan": {
+    "sig": "checkPlan(int256[],int256[])",
+    "selector": "0x317cef43"
+   },
+   "kernel": {
+    "sig": "kernel()",
+    "selector": "0xd4aae0c4"
+   },
+   "isProcessor": {
+    "sig": "isProcessor(address)",
+    "selector": "0x00091988"
+   },
+   "jobCount": {
+    "sig": "jobCount()",
+    "selector": "0x4c5d8a0f"
+   },
+   "ledgerHead": {
+    "sig": "ledgerHead()",
+    "selector": "0x11be04f7"
+   },
+   "ledgerLength": {
+    "sig": "ledgerLength()",
+    "selector": "0x2b57f2bd"
+   }
+  },
+  "errors": {
+   "0x37630a31": "NotHumanGuide()",
+   "0x24663556": "NotVerifier()",
+   "0x95cc9b68": "SafeStopped()",
+   "0x7c946ed7": "ZeroValue()",
+   "0xd8ef1aa0": "RoleConflict(address)",
+   "0x9360b4dd": "BadSpec(uint8)",
+   "0x710e1ce5": "BadDeadline()",
+   "0x510aa5f0": "UnknownJob(uint256)",
+   "0xa5d15e1f": "WrongStatus(uint256,uint8)",
+   "0xbfb22adf": "DeadlinePassed(uint256)",
+   "0x8603ed27": "NotSolver(uint256,address)",
+   "0x02beada8": "SpecMismatch(uint256)",
+   "0x3dbee8d0": "NotRequester(uint256)",
+   "0x08c379a0": "Error(string)",
+   "0x4e487b71": "Panic(uint256)"
+  },
+  "events": {
+   "LedgerAppended": {
+    "sig": "LedgerAppended(uint256,bytes32,bytes32,bytes32,bytes32)",
+    "topic": "0x68c37f9c29dd320c699c79e15dfd5e261111b18150fd6e367711935ad3ce9fc6",
+    "indexed": [
+     true,
+     true,
+     true,
+     false,
+     false
+    ]
+   },
+   "ProcessorSet": {
+    "sig": "ProcessorSet(address,bool)",
+    "topic": "0x169ed1ae3950f8c6ec3344e61fe6c5ebf0048aa1fc65b1b5d94917350a5bf775",
+    "indexed": [
+     true,
+     false
+    ]
+   },
+   "JobSubmitted": {
+    "sig": "JobSubmitted(uint256,bytes32,uint8,uint64,int256[])",
+    "topic": "0xd3b3b242a43da49261931cc0eb242870293622c980de3f52b49b77244349009b",
+    "indexed": [
+     true,
+     false,
+     false,
+     false,
+     false
+    ]
+   },
+   "JobPermitted": {
+    "sig": "JobPermitted(uint256,address,bool,bytes32)",
+    "topic": "0x6ce9f0733a9436b6df899a43803dafaa61c0d31d93a0db10425abe380c761be1",
+    "indexed": [
+     true,
+     true,
+     false,
+     false
+    ]
+   },
+   "ExecutionCommand": {
+    "sig": "ExecutionCommand(uint256,bytes32)",
+    "topic": "0x6770283bb775da0a5d073e1e2ada6841747673f8f1e23c7cd5a0a4638356b5e8",
+    "indexed": [
+     true,
+     false
+    ]
+   },
+   "ResultAccepted": {
+    "sig": "ResultAccepted(uint256,address,bytes32,int256,int256[])",
+    "topic": "0x99a09cd6ad016a43d12c573396065562ac3224413107542bf6d3a4602d5e81e8",
+    "indexed": [
+     true,
+     true,
+     false,
+     false,
+     false
+    ]
+   },
+   "ResultRejected": {
+    "sig": "ResultRejected(uint256,address,uint8,uint8)",
+    "topic": "0x3285b01ecebc02012087310008f0a58da87db713866ae604a41d31e7c6143ae2",
+    "indexed": [
+     true,
+     true,
+     false,
+     false
+    ]
+   },
+   "JobExecuted": {
+    "sig": "JobExecuted(uint256,bytes32)",
+    "topic": "0xe16a909794260a8847ed6411b12812c8312d727c1a67e4281d38cbc12d506dee",
+    "indexed": [
+     true,
+     false
+    ]
+   }
+  }
+ }
+}
