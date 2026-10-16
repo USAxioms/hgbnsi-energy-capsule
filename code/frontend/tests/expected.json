@@ -1,0 +1,19 @@
+{
+  "kernel_fingerprint": {"decision_table_sha256": "9e180bc9a6aba7bb58813b0ee24e7ae99722786aa655d801aa96bf010ca221b7", "lines": 13058},
+  "kernel_equivalence": {"cases": 12771, "mismatches": 0},
+  "wad_equivalence": {"operations": 40000, "mismatches": 0},
+  "source_binding": {"checks": 60, "mismatches": 0},
+  "energy_backend_equivalence": {"comparisons": 150000, "mismatches": 0, "boundary_contexts": 18712},
+  "energy_sample_round": {"verified": 4, "total": 5, "status": "PARTIAL", "failed": ["AX_005"], "refused_at_registration": ["AX_002", "AX_007"]},
+  "router_backend_equivalence": {"specs_validated": 20000, "plans_checked": 15303, "mismatches": 0, "reasons_covered": 8},
+  "dispatch_benchmark": {"seeds": 5, "heavy_instances": 600, "heavy_valid": 600, "heavy_optimal": 597, "seed42_optimal": 118,
+                         "median_gap": "0.00 %", "worst_gap": "0.63 %", "raw_analog_valid": 0, "raw_analog_proposals": 14400,
+                         "light_optimal": 200, "evening_peak_cost": "10057.500000000000000000", "evening_peak_optimal": true},
+  "energy_client_equivalence": {"agree": 100000, "disagree": 0},
+  "client_core": {"passed": 5914, "failed": 0},
+  "job_functions": {"passed": 1835, "failed": 0},
+  "client_logic": {"passed": 20, "failed": 0},
+  "end_to_end": {"passed": 28, "failed": 0},
+  "energy_reference_equivalence": {"comparisons": 150000, "agree": 138768, "deliberate_uptime_over_100": 11232, "unexplained": 0, "tables_match_energy_r3": true},
+  "zero_float_audit": {"certified_zero_float": true, "python_violations": 0, "float_instructions": 0}
+}
