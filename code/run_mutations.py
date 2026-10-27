@@ -49,10 +49,19 @@ for title, rel, old, new, must_fail in SELECTED:
     p = os.path.join(dst, rel); src = open(p).read()
     assert src.count(old) == 1, "mutation target not found: " + rel
     open(p, "w").write(src.replace(old, new))
+    
     subprocess.run([sys.executable, os.path.join(dst, "code", "run_all.py")], capture_output=True, text=True)
-    s = json.load(open(os.path.join(dst, "results", "summary.json")))
-    failed = {r["step"] for r in s["steps"] if not r["ok"]}
-    caught = s["status"] == "FAIL" and must_fail <= failed
+    
+    summary_path = os.path.join(dst, "results", "summary.json")
+    if os.path.exists(summary_path):
+        s = json.load(open(summary_path))
+        failed = {r["step"] for r in s["steps"] if not r["ok"]}
+        caught = s["status"] == "FAIL" and must_fail <= failed
+    else:
+        s = {"status": "FAIL", "steps": []}
+        failed = {"execution_crash"}
+        caught = False
+
     detected += caught
     report.append({"mutation": title, "file": rel, "expected_to_fail": sorted(must_fail), "failed_steps": sorted(failed), "detected": caught})
     shown = sorted(failed) if len(failed) <= 4 else sorted(must_fail & failed) + [f"+{len(failed - must_fail)} downstream"]
