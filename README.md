@@ -1,4 +1,4 @@
-# HGBNSI Energy Implementation — Reproducibility Capsule v2 (Pure WAD-18)
+# SovereigNet Energy — Reproducibility Capsule v2 (Pure WAD-18)
 
 **Human-Guided Blockchain-Native Safe Superintelligence (HGBNSI)**, energy implementation · Version 2.0 · October 2026
 Michael Aaron Russell, Universal Standard Axiom Corporation · ORCID 0009-0001-3360-6709
